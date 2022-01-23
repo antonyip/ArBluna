@@ -3,7 +3,7 @@
 
 import os, traceback
 import distutils.util
-from time import sleep
+from time import sleep, time
 from dotenv import load_dotenv
 from scripts.send_notification import notify
 from scripts.telegram_bot import setup_bot
@@ -208,6 +208,7 @@ def main() -> None:
                 break
 
             sleep(sleep_duration)
+            print(f"still alive (luna->bluna): {time()} ratio: {price}")
 
         # Flag to only notify once when monitoring to swap bluna for luna
         flag_start = True
@@ -229,6 +230,7 @@ def main() -> None:
                 break
 
             sleep(sleep_duration)
+            print(f"still alive (bluna->luna): {time()}")
 
 
 if __name__ == "__main__":

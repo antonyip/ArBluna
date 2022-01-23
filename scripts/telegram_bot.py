@@ -25,7 +25,7 @@ def ping_command(update: Update, context: CallbackContext) -> None:
 def help_command(update: Update, context: CallbackContext) -> None:
     """Send list of commands when /help is issued."""
     update.message.reply_text(
-        "Commands:\n/ping check if thebot is online\n/luna get the bluna -> luna ratio\n/bluna get the luna -> bluna ratio\n/ust get the ust ratio\n/balance get the balances\n/swap_to_bluna_command to force a swap from luna to bluna\n/swap_to_luna_command to force a swap from bluna to luna"
+        "Commands:\n/ping check if thebot is online\n/luna get the bluna -> luna ratio\n/bluna get the luna -> bluna ratio\n/ust get the ust ratio\n/balance get the balances\n/swap_to_bluna to force a swap from luna to bluna\n/swap_to_luna to force a swap from bluna to luna"
     )
 
 
