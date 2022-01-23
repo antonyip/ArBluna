@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 
 load_dotenv(override=True)
 
-chain_id = "columbus-4"
+chain_id = "columbus-5"
 
 public_node_url = os.getenv("PUBLIC_NODE_URL")
 mnemonic = os.getenv("MNEMONIC")
@@ -21,7 +21,7 @@ sleep_duration = float(os.getenv("SLEEP_DURATION"))
 
 denominator = 1000000
 
-# Connect to Testnet
+# Connect to mainnet
 terra = LCDClient(chain_id=chain_id, url=public_node_url)
 # Desire wallet via passphrase
 mk = MnemonicKey(mnemonic=mnemonic)
